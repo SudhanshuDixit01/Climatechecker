@@ -8,7 +8,7 @@ const citycondition = document.getElementById("city-condition"); // Corrected ty
 
 async function getData(cityname) {
           const promise = await fetch(
-            `http://api.weatherapi.com/v1/current.json?key=9900e43ffedb45829ef72444241405&q=${cityname}&aqi=yes`
+            `https://api.weatherapi.com/v1/current.json?key=9900e43ffedb45829ef72444241405&q=${cityname}&aqi=yes`
         );
         return await promise.json();
     }
