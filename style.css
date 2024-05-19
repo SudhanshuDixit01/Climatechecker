@@ -1,0 +1,108 @@
+/* style.css */
+
+body {
+    background: url(climate_bg.jpeg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.Searching {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+#City-input {
+    padding: 10px;
+    font-size: 1em;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#Search-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Search-button:hover {
+    background-color: #45a049;
+}
+
+.condition {
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.condition h3 {
+    margin: 10px 0;
+}
+
+@media (min-width: 600px) {
+    .condition {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 1.5em 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .Searching {
+        margin: 30px 0;
+    }
+
+    #City-input {
+        width: calc(50% - 5px);
+        max-width: 400px;
+        margin-right: 10px;
+    }
+
+    #Search-button {
+        width: calc(50% - 5px);
+        max-width: 150px;
+    }
+
+    .condition {
+        width: 60%;
+    }
+}
